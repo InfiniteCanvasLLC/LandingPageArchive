@@ -1,0 +1,108 @@
+/* # MIXINS
+-------------------------------------*/
+@mixin round-corner( $radius: 4px ) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin box-shadow( $alpha: 0.1 ) {
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, $alpha);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, $alpha);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, $alpha);
+}
+
+/* # CUSTOMIZE PANEL
+-------------------------------------*/
+#mColorPicker {
+	z-index: 10000;
+}
+#mColorPickerInput {
+	padding: 4px;
+}
+#customize-panel {
+	@include box-shadow;
+
+	position: fixed;
+	left: -252px;
+	top: 40px;
+	background: #FAFAFA;
+	z-index: 9999;
+	width: 252px;
+	padding: 0;
+	
+	input[type='text'] {
+		width: 100px;
+		padding: 5px 5px;
+		margin: 0 5px 0 0;
+	}
+
+	section {
+		border-bottom: 1px solid #DDD;
+		padding: 20px 15px;
+		background: #FAFAFA;
+		position: relative;
+		z-index: 1000;
+		display: none;
+	}
+	.item {
+		margin: 0 0 10px 0;
+	}
+	.title {
+		font-weight: bold;
+		margin: 0 0 10px 0;
+	}
+	.item-title {
+		font-size: 10px;
+		color: #888;
+	}
+	.toggler {
+		background: #FFF;
+		position: absolute;
+		top: 0;
+		right: -56px;
+		cursor: pointer;
+		-webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+		-moz-border-radius-topleft: 0px;
+		-moz-border-radius-topright: 4px;
+		-moz-border-radius-bottomright: 4px;
+		-moz-border-radius-bottomleft: 0px;
+		-webkit-border-radius: 0px 4px 4px 0px;
+		border-radius: 0px 4px 4px 0px;
+		border-left: 1px dotted #CCC;
+		font-size: 30px;
+		text-align: center;
+		padding: 10px 15px;
+		i.icon-remove-sign { display: none; }
+		i.icon-cog { display: inline-block; }
+	}
+	&.open .toggler {
+		i.icon-cog { display: none; }
+		i.icon-remove-sign { display: inline-block; }
+	}
+
+	.custom-list { margin: 0; }
+	.custom-list li {
+		@include round-corner(1px);
+		padding: 0;
+		background: none;
+		border: 2px solid #FFF;
+		float: left;
+		margin: 0 5px 5px 0;
+		width: 30px;
+		height: 20px;
+		overflow: hidden;
+		cursor: pointer;
+		position: relative;
+
+		img { position: absolute; top: 0; left: 0; }
+
+		&.scheme.red { background: #e90000; }
+		&.scheme.green { background: #8cae03; }
+		&.scheme.blue { background: #0095e2; }
+		&.scheme.orange { background: #ff4100; }
+		&.scheme.black { background: #333; }
+	}
+
+}

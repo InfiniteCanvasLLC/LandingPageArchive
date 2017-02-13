@@ -1,0 +1,42 @@
+/* # Font
+-------------------------------------*/
+a {
+	color: #e54b00;
+	&:hover { color: #b73a00; }
+}
+
+/* # SCHEME
+#e90000, #0095e2, #ff4100, #9EC408, #333
+-------------------------------------*/
+a {
+	color: #e90000;
+	&:hover { color: #c50000; }
+}
+.icon,
+#content .section-title span em {
+	background-color: #e90000;
+}
+
+/* # Google Web Font
+-------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+h1, h2, h3, h4, h5, h6, #header-left {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+/* # SPLASH
+-------------------------------------*/
+#splash {
+	background-color: #333;
+}
+
+/* # BORDER
+-------------------------------------*/
+#border {
+	background-color: #AF0006;
+}
+
+/* # CUSTOM STYLE
+/* # PUT YOUR CUSTOM STYLE BELOW
+-------------------------------------*/

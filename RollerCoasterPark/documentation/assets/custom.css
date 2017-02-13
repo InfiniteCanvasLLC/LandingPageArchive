@@ -1,0 +1,20 @@
+hr {
+	height: 5px;
+	margin: 40px 0;
+}
+.separator {
+	height: 1px;
+	background: #EEE;
+	margin: 20px 0;
+}
+code {
+	background: #eee;
+	padding: 0 5px;
+}
+img {
+	padding: 5px;
+	border: 5px solid #EEE;
+	display: block;
+	margin: 20px 0 30px 0;
+	max-width: 90%;
+}

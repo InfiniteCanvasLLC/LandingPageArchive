@@ -1,0 +1,33 @@
+/* # Google Web Font
+-------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+h1, h2, h3, h4, h5, h6, #header-left {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  
+@font-face {
+    font-family: ChickenKing;
+    src: url(../font/chicken-king.ttf);
+}
+
+
+/* # SCHEME
+example: #e90000, #0095e2, #ff4100, #9EC408, #333
+-------------------------------------*/
+a { color: #0095e2; }
+.icon, #content .section-title span em {
+  background-color: rgb(18, 206, 222); }
+
+/* # SPLASH
+-------------------------------------*/
+#splash {
+  background-color: #333; }
+
+/* # BORDER
+-------------------------------------*/
+#border {
+  background-color: rgb(116, 232, 250); }
+
+/* # CUSTOM STYLE
+/* # PUT YOUR CUSTOM STYLE BELOW
+-------------------------------------*/

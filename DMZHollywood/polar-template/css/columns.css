@@ -1,0 +1,83 @@
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth {
+  float: left;
+  height: auto !important;
+  margin-right: 4%;
+  min-height: 1px;
+  position: relative;
+}
+
+.one_half {
+  width: 48%;
+}
+
+.one_third {
+  width: 30.6%;
+}
+
+.two_third {
+  width: 65.3%;
+}
+
+.one_fourth {
+  width: 22%;
+}
+
+.two_fourth {
+  width: 48%;
+}
+
+.three_fourth {
+  width: 74%;
+}
+
+.last {
+  clear: right;
+  margin-right: 0 !important;
+}
+
+.one_half .one_half {
+  margin-right: 8.3%;
+  width: 45.83%;
+}
+
+.one_half .one_third {
+  margin-right: 8.3%;
+  width: 27.7%;
+}
+
+.one_half .two_third {
+  margin-right: 8.3%;
+  width: 63.8%;
+}
+
+.two_third .one_third {
+  margin-right: 6.12%;
+  width: 29.25%;
+}
+
+.two_third .two_third {
+  margin-right: 6.12%;
+  width: 64.62%;
+}
+
+.two_third .one_fourth {
+  margin-right: 6.12%;
+  width: 20.4%;
+}
+
+/*  #MOBILE (Portrait)
+================================================== */
+@media only screen and (max-width: 767px) {
+  .one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+/*  #TABLET (Portrait)
+================================================== */
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+  .one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}

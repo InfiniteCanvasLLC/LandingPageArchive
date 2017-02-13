@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>	
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Document | Polar - Responsive Apps Landing Page - HTML Version</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+	
+	<!-- Prettify -->
+	<link rel="stylesheet" type="text/css" href="js/prettify/sunburst.css" />
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+
+	<!-- Base Style -->
+	<link rel="stylesheet" type="text/css" href="./css/screen.css" />
+	<link rel="stylesheet" type="text/css" href="./css/media-queries.css" />
+	<link rel="stylesheet" type="text/css" href="./css/custom.css" />
+	
+	<!-- Fancybox -->
+	<link rel="stylesheet" type="text/css" href="./js/fancybox/jquery.fancybox-1.3.4.css" />
+
+	<script src="js/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+	<section id="splash" class="splash-inner-page">
+
+		<div class="container">
+			<h1 class="page-title">Documentation</h1>
+			<div class="sub-title">documentation for Polar HTML template</div>
+		</div>
+
+		<div class="pattern"></div>
+		<div class="inner-shadow"></div>
+	</section><!-- #splash -->
+
+	<section id="content">
+	
+		<section>
+			<div class="container">
+				
+				<h2 class="section-title"><span><em>T</em>hank you very much for purchasing Polar!</span></h2>
+				<p>If you have any issue or question that this document does not cover, feel free to post it on <a href="http://support.wegrass.com">Wegrass Support Forum</a></p>
+
+			</div>
+		</section>
+
+
+		<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>D</em>evices</span></h2>
+
+				<ul>
+					<li><strong>devices class</strong> : ipad-portrait, ipad-landscape, iphone-portrait, iphone-landscape, android-phone-portrait, android-phone-landscape, android-tablet-portrait, android-tablet-landscape, window-phone-portrait, window-phone-landscape, macbook</li>
+				</ul>
+		
+		<pre class="prettyprint lang-html linenums">
+&lt;!-- Change "ipad-portrait" to any value from list above --&gt;
+&lt;div id="product-container" class="container ipad-portrait"&gt;
+...
+&lt;/div&gt;
+</pre>
+
+		<h3>Screen Size</h3>
+		<ul>
+			<li><strong>iPad - Portrait</strong> : 382 x 520</li>
+			<li><strong>iPad - Landscape</strong> : 556 x 380</li>
+			<li><strong>iPhone - Portrait</strong> : 334 x 450</li>
+			<li><strong>iPhone - Landscape</strong> : 480 x 310</li>
+			<li><strong>Android Phone - Portrait</strong> : 338 x 450</li>
+			<li><strong>Android Phone - Landscape</strong> : 328 x 480</li>
+			<li><strong>Android Tablet - Portrait</strong> : 400 x 550</li>
+			<li><strong>Android Tablet - Landscape</strong> : 594 x 400</li>
+			<li><strong>Window Phone - Portrait</strong> : 328 x 480</li>
+			<li><strong>Window Phone - Landscape</strong> : 540 x 320</li>
+			<li><strong>Macbook</strong> : 680 x 400</li>
+		</ul>
+
+		</div>
+	</section>
+
+		
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>S</em>cheme</span></h2>
+
+		<p>you can define dark/light version by adding class "light" or "dark" to body tag.</p>
+
+<pre class="prettyprint lang-html linenums">&lt;body class="light"&gt; ... &lt;/body&gt;
+&lt;body class="dark"&gt; ... &lt;/body&gt;
+</pre>	
+
+<p>you can define color scheme at <em>/css/custom.css</em></p>
+		<pre class="prettyprint lang-css linenums">/* # SCHEME
+example: #e90000, #0095e2, #ff4100, #9EC408, #333
+-------------------------------------*/
+a { color: #0095e2; }
+.icon, #content .section-title span em {
+  background-color: #0095e2; }
+</pre>	
+
+		</div>
+	</section>
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>S</em>plash Background</span></h2>
+		<ul>
+			<li><strong>color</strong> : change it at <em>/css/custom.css</em></li>
+			<li><strong>image</strong> : replace the file <em>/images/bg.jpg</em></li>
+			<li><strong>texture class</strong> : diagonal-1, diagonal-2, grain, grid-black-1, grid-black-2, grid-black-3, grid-black-4, grid-white-1, grid-white-2, grid-white-3, grid-white-4, mosaic</li>
+		</ul>
+		<pre class="prettyprint lang-html linenums">
+&lt;section id="splash"&gt;
+	...
+	&lt;div class="pattern"&gt;&lt;/div&gt;
+	&lt;div class="inner-shadow"&gt;&lt;/div&gt;
+&lt;/section&gt;&lt;!-- #splash --&gt;
+</pre>
+
+		</div>
+	</section>
+
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>B</em>order</span></h2>
+	
+		<ul>
+			<li><strong>color</strong> : change it at <em>/css/custom.css</em></li>
+			<li><strong>texture class</strong> : grass, grain, grunge, wood</li>
+		</ul>
+		<pre class="prettyprint lang-html linenums">
+&lt;div id="border" class="wood"&gt;
+	&lt;div id="border-top"&gt;&lt;/div&gt;
+	&lt;div id="border-body"&gt;&lt;/div&gt;
+	&lt;div class="drop-shadow"&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;!-- #border --&gt;
+</pre>
+
+		</div>
+	</section>
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>G</em>oogle Web Font</span></h2>
+	
+		<p>You can change font face at <em>/css/custom.css</em>. Find all fonts list on : <a href="http://www.google.com/webfonts">http://www.google.com/webfonts</a></p>
+
+	</div>
+	</section>
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>U</em>tility Class</span></h2>
+	
+		<h3>Responsive Visible & Hidden</h3>
+		
+		<ul>
+			<li><strong>visible</strong> : visible-desktop, visible-tablet, visible-phone</li>
+			<li><strong>hidden</strong> : hidden-desktop, hidden-tablet, hidden-phone</li>
+		</ul>
+
+		<div class="one_half">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Desktop</th>
+						<th>Tablet</th>
+						<th>Phone</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>.visible-desktop</td>
+						<td>Show</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>.visible-tablet</td>
+						<td></td>
+						<td>Show</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>.visible-phone</td>
+						<td></td>
+						<td></td>
+						<td>Show</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="one_half last">
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th>Desktop</th>
+						<th>Tablet</th>
+						<th>Phone</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>.hidden-desktop</td>
+						<td></td>
+						<td>Show</td>
+						<td>Show</td>
+					</tr>
+					<tr>
+						<td>.hidden-tablet</td>
+						<td>Show</td>
+						<td></td>
+						<td>Show</td>
+					</tr>
+					<tr>
+						<td>.hidden-phone</td>
+						<td>Show</td>
+						<td>Show</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+	</section>
+
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>M</em>ailChimp Subscribe Form</span></h2>
+
+		<ol>
+			<li>Register MailChimp account at https://mailchimp.com/signup/ and then login to your MailChimp account</li>
+			<li>Create List : List > Create List</li>
+			<li>Open File <em>/php/config.inc.php</em> located in your download package</li>
+			<li>Fill in MailChimp API Key - see http://admin.mailchimp.com/account/api</li>
+			<li>Fill in List ID - MailChimp Account > List > Setting > List Setting and Unique ID</li>
+			<li>Save file and use markup below.</li>
+		</ol>
+
+<pre class="prettyprint lang-html linenums">
+&lt;form action="/php/subscribe.php" method="post" data-mailchimp=""&gt;
+	&lt;div class="input"&gt;
+		&lt;label for="subscribe-email">Your Email &lt;em>*&lt;/em>&lt;/label&gt;
+		&lt;input type="text" id="subscribe-email" name="subscribe-email" class="{required:true, email:true}" /&gt;
+	&lt;/div&gt;
+	&lt;div class="form-respond"&gt;&lt;strong&gt;Sending ...&lt;/strong&gt;&lt;/div&gt;
+	&lt;div class="input"&gt;
+		&lt;div class="button secondary submit"&gt;
+			&lt;a href="#"&gt;&lt;span>Subscribe&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+		</div>
+	</section>
+
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>C</em>ontact Form</span></h2>
+
+		<ol>
+			<li>Open File <em>/php/config.inc.php</em> located in your download package.</li>
+			<li>At "Contact Form" section, fill in value by follow the instruction in the config file.</li>
+			<li>Save file and use markup below.</li>
+		</ol>
+		
+<pre class="prettyprint lang-html linenums">
+&lt;form action="/php/contact.php" method="post"&gt;
+	&lt;input type="text" name="email" class="pot" /&gt;
+	&lt;div class="input"&gt;
+		&lt;label for="name"&gt;Your Name &lt;em&gt;*&lt;/em&gt;&lt;/label&gt;
+		&lt;input type="text" id="name" name="name" class="{required:true}" /&gt;
+	&lt;/div&gt;
+	&lt;div class="input"&gt;
+		&lt;label for="email-r"&gt;Your Email &lt;em&gt;*&lt;/em&gt;&lt;/label&gt;
+		&lt;input type="text" id="email-r" name="email-r" class="{required:true, email:true}" /&gt;
+	&lt;/div&gt;
+	&lt;div class="input"&gt;
+		&lt;label for="contact-message"&gt;Message&lt;/label&gt;
+		&lt;textarea id="contact-message" name="contact-message" rows="8" /&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+	&lt;div class="form-respond"&gt;&lt;strong&gt;Sending ...&lt;/strong&gt;&lt;/div&gt;
+	&lt;div class="input"&gt;
+		&lt;div class="button secondary submit"&gt;
+			&lt;a href="#"&gt;&lt;span&gt;Submit&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+</pre>
+
+		</div>
+	</section>
+
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>L</em>ayout</span></h2>
+		
+
+<pre class="prettyprint lang-html linenums">
+&lt;!-- Full Width --&gt;
+&lt;section&gt; &lt;!-- Wrap each block with "section" tag --&gt;
+	&lt;div class="container"&gt;
+		&lt;!-- Content Here --&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- one_half / one_half --&gt;
+&lt;section&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="one_half"&gt; &lt;!-- Content Here --&gt; &lt;/div&gt;
+		&lt;div class="one_half last"&gt; &lt;!-- Content Here --&gt; &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- one_third / two_third --&gt;
+&lt;section&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="one_third"&gt; &lt;!-- Content Here --&gt; &lt;/div&gt;
+		&lt;div class="two_third last"&gt; &lt;!-- Content Here --&gt; &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- two_third / one_third --&gt;
+&lt;section&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="two_third"&gt; &lt;!-- Content Here --&gt; &lt;/div&gt;
+		&lt;div class="one_third last"&gt; &lt;!-- Content Here --&gt; &lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+</pre>
+
+		</div>
+	</section>
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>S</em>lider</span></h2>
+		
+		<p>Slider's height will be its' content max height.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="flexslider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li&gt;&lt;img src="../images/sample/slide-1.jpg" /&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="../images/sample/slide-2.jpg" /&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+	
+		</div>
+	</section>
+
+
+	<section>
+		<div class="container">
+			<h2 class="section-title"><span><em>G</em>allery</span></h2>
+		
+<pre class="prettyprint lang-html linenums">
+&lt;div class="frame"&gt;
+	&lt;ul class="gallery-list"&gt;
+		&lt;li class="greyscale"&gt;&lt;a href="..." class="modal-gallery"&gt;&lt;img src="..." alt="img"&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="greyscale"&gt;&lt;a href="..." class="modal-gallery"&gt;&lt;img src="..." alt="img"&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+	
+		</div>
+	</section>
+
+
+	<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>E</em>lements</span></h2>
+	
+			
+			<!-- Icons -->
+			<h3>Icons</h3>
+			<ul>
+				<li><strong>class</strong> : icon-adjust, icon-asterisk, ... see all : <a href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome/</a></li>
+			</ul>
+<pre class="prettyprint lang-html linenums">
+&lt;i class="icon-adjust"&gt;&lt;/i&gt;
+&lt;i class="icon-asterisk"&gt;&lt;/i&gt;
+</pre>
+				
+			<!-- Rating -->
+			<h3>Rating</h3>
+			<p>.rating-fill : width = 226 * rating(0-5) / 5<br />
+for example : 4.5 stars = 226 * 4.5 / 5</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="rating"&gt;
+	&lt;div style="width:203px;" class="rating-fill"&gt;&lt;/div&gt;
+	4.5 stars &lt;small>on&lt;/small&gt; ThemeForest Market
+&lt;/div&gt;
+</pre>
+
+			<!-- Pricing Table -->
+			<h3>Pricing Table</h3>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="pricing-box "&gt;
+	&lt;div class="header"&gt;
+		&lt;div class="package">Basic Package&lt;/div&gt;
+		&lt;div class="price"&gt;$49.00 &lt;small&gt;/ month&lt;/small&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="content"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+			&lt;li&gt;Nulla elementum velit ut purus.&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;a class="button yellow" href="#"&gt;&lt;span>Signup Now&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="ribbon"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+				
+			<!-- Toggle -->
+			<h3>Toggle</h3>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="toggle"&gt;
+	&lt;div class="tab"&gt;&lt;i class="icon-plus"&gt;&lt;/i&gt;&lt;i class="icon-minus"&gt;&lt;/i&gt;In ut massa massa, feugiat interdum lorem&lt;/div&gt;
+	&lt;div class="pane"&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+				
+			<!-- Tabs -->
+			<h3>Tab</h3>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="tabs-wrap" data-initial-tab="2"&gt;
+	&lt;ul class="tabs"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Tab #1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Tab #2&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="panes"&gt;
+		&lt;div class="pane"&gt;&lt;p>Lorem ipsum dolor sit amet, consectetur.&lt;/p&gt;&lt;/div&gt;
+		&lt;div class="pane"&gt;&lt;p>Vestibulum mattis lacus at erat cursus ac.&lt;/p&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+			<!-- Buttons -->
+			<h3>Button</h3>
+			<ul>
+				<li><strong>color</strong> : black, blue, green, magenta, orange, red, yellow</li>
+			</ul>
+<pre class="prettyprint lang-html linenums">
+&lt;div class="button button-icon blue"&gt;
+	&lt;a href="#"&gt;&lt;span&gt;&lt;i class="icon-ok"&gt;&lt;/i&gt;$3.99 &lt;small&gt;Window App Store&lt;/small&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="button button-icon black"&gt;
+	&lt;a href="#"&gt;&lt;span&gt;&lt;i class="icon-android"&gt;&lt;/i&gt;$3.99 &lt;small&gt;Google Play Market&lt;/small&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+			<!-- Map -->
+			<h3>Map</h3>
+			<ul>
+				<li><strong>data-lat</strong> : latitude</li>
+				<li><strong>data-long</strong> : longituide</li>
+				<li><strong>data-zoom</strong> : zoom level</li>
+			</ul>
+<pre class="prettyprint lang-html linenums">
+&lt;div id="map" style="height: 250px;" data-lat="14.26438308756265" data-long="100.1953125" data-zoom="5"&gt;&lt;/div&gt;
+</pre>
+
+			<!-- Modal -->
+			<h3>Modal Link</h3>
+			<ul>
+				<li><strong>class</strong> : modal-image, modal-vimeo, modal-youtube</li>
+			</ul>
+<pre class="prettyprint lang-html linenums">
+&lt;a href="../images/sample/image-1.jpg" class="modal-image" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."&gt;Image Lighbox&lt;/a&gt;
+&lt;a href="http://www.youtube.com/watch?v=J_UBKHxTkgI" class="modal-youtube"&gt;Youtube Modal&lt;/a&gt;
+&lt;a href="http://vimeo.com/27299211" class="modal-vimeo"&gt;Vimeo Modal&lt;/a&gt;
+
+&lt;div class="button"&gt;
+	&lt;a href="../images/sample/image-1.jpg" class="modal-image" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."&gt;
+		&lt;span&gt;Image Modal&lt;/span&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="button"&gt;
+	&lt;a href="http://www.youtube.com/watch?v=J_UBKHxTkgI" class="modal-youtube"&gt;
+		&lt;span&gt;Youtube Modal&lt;/span&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="button"&gt;
+	&lt;a href="http://vimeo.com/27299211" class="modal-vimeo"&gt;
+		&lt;span&gt;Vimeo Modal&lt;/span&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+			<!-- Quote -->
+			<h3>Quote</h3>
+<pre class="prettyprint lang-html linenums">
+&lt;blockquote&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula laoreet gravida. Pellentesque sagittis tincidunt mauris id venenatis. Vestibulum rhoncus rhoncus auctor. Duis rhoncus, diam ut interdum fermentum.&lt;/p&gt;
+	&lt;div class="rating-small-wrap"&gt;
+		&lt;!-- .rating-small width = 112 * rating(0-5) / 5 --&gt;
+		&lt;div style="width:112px;" class="rating-small-fill"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;p class="cite"&gt;&lt;cite&gt;John Doe&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</pre>
+
+		</div>
+		</section>
+
+
+		<section>
+			<div class="container">
+				<h2 class="section-title"><span><em>S</em>ample Content</span></h2>
+
+
+			<div class="rating">
+				<div style="width:226px;" class="rating-fill"></div>
+				5 stars <small>on</small> ThemeForest Market
+			</div>
+			<div class="spacer"></div>
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="rating"&gt;
+	&lt;div style="width:226px;" class="rating-fill"&gt;&lt;/div&gt;
+	5 stars &lt;small>on&lt;/small&gt; ThemeForest Market
+&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+
+<div class="one_half">
+	<h4><span class="icon"></span> 12 Showcase Devices</h4>
+	<div class="clear"></div>
+	<p>Pellentesque ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, libero non elementum aliquam.</p>
+</div>
+<div class="one_half last">
+	<h4><span class="icon"></span> Fully Responsive</h4>
+	<div class="clear"></div>
+	<p>Maecenas ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, libero non elementum aliquam.</p>
+</div>
+
+<div class="one_half">
+	<h4><span class="icon"></span> Easily Customizable</h4>
+	<div class="clear"></div>
+	<p>Maecenas ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, libero non elementum aliquam.</p>
+</div>
+<div class="one_half last">
+	<h4><span class="icon"></span> HTML 5 & CSS3</h4>
+	<div class="clear"></div>
+	<p>Lorem posuere luctus nisi, in rutrum erat egestas ac. Aliquam eu sollicitudin sapien. Nullam nulla est, rhoncus a porttitor sit amet.</p>
+</div>
+<div class="spacer"></div>
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="one_half"&gt;
+	&lt;h3&gt;&lt;span class="icon">&lt;/span&gt; Easily Customizable&lt;/h3&gt;
+	&lt;div class="clear">&lt;/div&gt;
+	&lt;p>Maecenas ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, libero non elementum aliquam.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="one_half last"&gt;
+	&lt;h3&gt;&lt;span class="icon"&gt;&lt;/span&gt; HTML 5 & CSS3&lt;/h3&gt;
+	&lt;div class="clear"&gt;&lt;/div&gt;
+	&lt;p&gt;Lorem posuere luctus nisi, in rutrum erat egestas ac. Aliquam eu sollicitudin sapien. Nullam nulla est.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="flexslider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li&gt;&lt;img src="../images/sample/slide-1.jpg" /&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;img src="../images/sample/slide-2.jpg" /&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="slide-control"&gt;&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+
+<div class="one_half">
+	<div class="frame"><a href="../images/sample/image-1.jpg" class="modal-image" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><img src="../images/sample/image-1.jpg" /></a></div>
+</div>
+<div class="one_half last">
+	<h4>Consectetur Adipiscing Elit</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum augue et felis dapibus luctus. Donec sit amet ultrices leo. Vestibulum odio enim</p>
+	<div class="button blue">
+		<a href="http://wegrass.com"><span>More Info</span></a>
+	</div>
+</div>
+<div class="spacer"></div>
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="one_half"&gt;
+	&lt;div class="frame"&gt;&lt;a href="../images/sample/image-1.jpg" class="modal-image" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."&gt;&lt;img src="../images/sample/image-1.jpg" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="one_half last"&gt;
+	&lt;h3&gt;Consectetur Adipiscing Elit&lt;/h3&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum augue et felis dapibus luctus. Donec sit amet ultrices leo. Vestibulum odio enim&lt;/p&gt;
+	&lt;div class="button blue"&gt;
+		&lt;a href="http://wegrass.com"&gt;&lt;span&gt;More Info&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+<div class="one_half align-right">
+	<h4>Consectetur Adipiscing Elit</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum augue et felis dapibus luctus. Donec sit amet ultrices leo. Vestibulum odio enim</p>
+	<div class="button magenta">
+		<a href="http://wegrass.com">	            		
+			<span>More Info</span>
+		</a>
+	</div>
+</div>
+<div class="one_half last">
+	<div class="frame"><img src="../images/sample/image-2.jpg" /></div>
+</div>
+<div class="spacer"></div>
+
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="one_half align-right"&gt;
+	&lt;h3&gt;Consectetur Adipiscing Elit&lt;/h3&gt;
+	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum augue et felis dapibus luctus. Donec sit amet ultrices leo. Vestibulum odio enim&lt;/p&gt;
+	&lt;div class="button magenta"&gt;
+		&lt;a href="http://wegrass.com"&gt;&lt;span&gt;More Info&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="one_half last"&gt;
+	&lt;div class="frame"&gt;&lt;img src="../images/sample/image-2.jpg" /&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+
+<div class="one_third">
+	<div class="pricing-box">
+	<div class="header">
+		<div class="package">Basic Package</div>
+		<div class="price">$39.00 <small>/ month</small></div>
+	</div>
+	<div class="content">
+		<ul>
+		<li>Lorem ipsum dolor sit amet</li>
+		<li>Nulla elementum velit ut purus porttitor non rutrum eros scelerisque</li>
+		<li>Nam vel ipsum purus</li>
+		<li>Phasellus sit amet mauris</li>
+		</ul>
+		<a class="button green" href="#"><span>Signup Now</span></a>
+	</div>
+	</div>
+</div>
+<div class="one_third">
+	<div class="pricing-box ">
+		<div class="header">
+			<div class="package">Basic Package</div>
+			<div class="price">$49.00 <small>/ month</small></div>
+		</div>
+		<div class="content">
+			<ul>
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Nulla elementum velit ut purus porttitor non rutrum eros scelerisque</li>
+			<li>Nam vel ipsum purus</li>
+			<li>Phasellus sit amet mauris</li>
+			</ul>
+			<a class="button yellow" href="#"><span>Signup Now</span></a>
+		</div>
+		<div class="ribbon"></div>
+	</div>
+</div>
+<div class="one_third last">
+	<div class="pricing-box">
+		<div class="header">
+			<div class="package">Basic Package</div>
+			<div class="price">$59.00 <small>/ month</small></div>
+		</div>
+		<div class="content">
+			<ul>
+			<li>Lorem ipsum dolor sit amet</li>
+			<li>Nulla elementum velit ut purus porttitor non rutrum eros scelerisque</li>
+			<li>Nam vel ipsum purus</li>
+			<li>Phasellus sit amet mauris</li>
+			</ul>
+			<a class="button orange" href="#"><span>Signup Now</span></a>
+		</div>
+	</div>
+</div>
+<div class="spacer"></div>
+
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="one_third"&gt;
+	&lt;div class="pricing-box "&gt;
+		&lt;div class="header"&gt;
+			&lt;div class="package"&gt;Basic Package&lt;/div&gt;
+			&lt;div class="price"&gt;$49.00 &lt;small&gt;/ month&lt;/small&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		
+		&lt;div class="content"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+				&lt;li&gt;Nulla elementum velit ut purus porttitor non rutrum eros scelerisque&lt;/li&gt;
+				&lt;li&gt;Nam vel ipsum purus&lt;/li&gt;
+				&lt;li&gt;Phasellus sit amet mauris&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;a class="button yellow" href="#"&gt;&lt;span&gt;Signup Now&lt;/span&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="ribbon"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+
+<div class="flexslider">
+	<ul class="slides">
+		<li>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula laoreet gravida. Pellentesque sagittis tincidunt mauris id venenatis. Vestibulum rhoncus rhoncus auctor. Duis rhoncus, diam ut interdum fermentum.</p>
+				<div class="rating-small-wrap">
+					<div style="width:112px;" class="rating-small-fill"></div>
+				</div>
+				<p class="cite"><cite>John Doe</cite></p>
+			</blockquote>
+		</li>
+		<li>
+			<blockquote>
+				<p>Morbi malesuada, tortor eu cursus mattis, nunc leo pretium orci, non pharetra neque turpis at odio. In egestas magna non nunc hendrerit adipiscing eget eu erat.</p>
+				<div class="rating-small-wrap">
+					<div style="width:112px;" class="rating-small-fill"></div>
+				</div>
+				<p class="cite"><cite>John Doe</cite></p>
+			</blockquote>
+		</li>
+		<li>
+			<blockquote>
+				<p>Morbi malesuada, tortor eu cursus mattis, nunc leo pretium orci, non pharetra neque turpis at odio. In egestas magna non nunc hendrerit adipiscing eget eu erat.</p>
+				<div class="rating-small-wrap">
+					<div style="width:112px;" class="rating-small-fill"></div>
+				</div>
+				<p class="cite"><cite>John Doe</cite></p>
+			</blockquote>
+		</li>
+	</ul>
+</div>
+<div class="slide-control"></div>
+<div class="spacer"></div>
+
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="flexslider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li&gt;
+			&lt;blockquote&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula.&lt;/p&gt;
+				&lt;div class="rating-small-wrap"&gt;
+					&lt;div style="width:112px;" class="rating-small-fill"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;p class="cite"&gt;&lt;cite&gt;John Doe&lt;/cite&gt;&lt;/p&gt;
+			&lt;/blockquote&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;blockquote&gt;
+				&lt;p&gt;Morbi malesuada, tortor eu cursus mattis, nunc leo pretium orci.&lt;/p&gt;
+				&lt;div class="rating-small-wrap"&gt;
+					&lt;div style="width:112px;" class="rating-small-fill"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;p class="cite"&gt;&lt;cite&gt;John Doe&lt;/cite&gt;&lt;/p&gt;
+			&lt;/blockquote&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="slide-control"&gt;&lt;/div&gt;
+</pre>
+<div class="spacer"></div>
+
+
+<div class="frame">
+<div class="map-wrap">
+		
+	<div id="map" style="height: 700px;" data-lat="-12.043333" data-long="-77.028333"></div>
+
+	<div class="contact-info-pane">
+		<p>We are located in Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, libero non elementum aliquam.</p>
+
+		<p>
+			<span class="info"><i class="icon-envelope-alt"></i> johndoe@gmail.com</span>
+			<span class="info"><i class="icon-mobile-phone"></i> 1234568, 1234568</span>
+			<span class="info"><i class="icon-phone"></i> 1234568, 1234568</span>
+			<span class="info"><i class="icon-print"></i> 1234568, 1234568</span>
+		</p>
+
+		<form action="/php/contact.php" method="post">
+			<input type="text" name="email" class="pot" />
+			<div class="input">
+				<input type="text" id="name" name="name" class="{required:true}" placeholder="Name" />
+			</div>
+			<div class="input">
+				<input type="text" id="email-r" name="email-r" class="{required:true, email:true}" placeholder="Email" />
+			</div>
+
+			<!-- 	Additional Field 
+					Use name="add[*]", where * is the information name, you wish to show in Email.
+			-->
+			<div class="input">
+				<input type="text" id="phone" name="add[Phone Number]" class="{required:false}" placeholder="Phone Number" />
+			</div>
+
+			<div class="input">
+				<textarea id="contact-message" name="contact-message" rows="8" placeholder="Message"></textarea>
+			</div>
+			<div class="form-respond"><strong>Sending…</strong></div>
+			<div class="input">
+				<div class="button small secondary submit">
+            		<a href="#">	            		
+            			<span>Submit</span>
+            		</a>
+            	</div>
+			</div>
+		</form>
+	</div>
+
+</div>
+</div><!-- .frame -->
+<div class="spacer"></div>
+
+
+<pre class="prettyprint lang-html linenums">
+&lt;div class="frame"&gt;
+&lt;div class="map-wrap"&gt;
+		
+	&lt;div id="map" style="height: 700px;" data-lat="-12.043333" data-long="-77.028333"&gt;&lt;/div&gt;
+
+	&lt;div class="contact-info-pane"&gt;
+		&lt;p&gt;We are located in Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat, libero non elementum aliquam.&lt;/p&gt;
+
+		&lt;p&gt;
+			&lt;span class="info"&gt;&lt;i class="icon-envelope-alt"&gt;&lt;/i&gt; johndoe@gmail.com&lt;/span&gt;
+			&lt;span class="info"&gt;&lt;i class="icon-mobile-phone"&gt;&lt;/i&gt; 1234568, 1234568&lt;/span&gt;
+			&lt;span class="info"&gt;&lt;i class="icon-phone"&gt;&lt;/i&gt; 1234568, 1234568&lt;/span&gt;
+			&lt;span class="info"&gt;&lt;i class="icon-print"&gt;&lt;/i&gt; 1234568, 1234568&lt;/span&gt;
+		&lt;/p&gt;
+
+		&lt;form action="/php/contact.php" method="post"&gt;
+			&lt;input type="text" name="email" class="pot" /&gt;
+			&lt;div class="input"&gt;
+				&lt;input type="text" id="name" name="name" class="{required:true}" placeholder="Name" /&gt;
+			&lt;/div&gt;
+			&lt;div class="input"&gt;
+				&lt;input type="text" id="email-r" name="email-r" class="{required:true, email:true}" placeholder="Email" /&gt;
+			&lt;/div&gt;
+
+			&lt;!-- 	Additional Field 
+					Use name="add[*]", where * is the information name, you wish to show in Email.
+			--&gt;
+			&lt;div class="input"&gt;
+				&lt;input type="text" id="phone" name="add[Phone Number]" class="{required:false}" placeholder="Phone Number" /&gt;
+			&lt;/div&gt;
+
+			&lt;div class="input"&gt;
+				&lt;textarea id="contact-message" name="contact-message" rows="8" placeholder="Message"&gt;&lt;/textarea&gt;
+			&lt;/div&gt;
+			&lt;div class="form-respond"&gt;&lt;strong&gt;Sending…&lt;/strong&gt;&lt;/div&gt;
+			&lt;div class="input"&gt;
+				&lt;div class="button small secondary submit"&gt;
+            		&lt;a href="#"&gt;	            		
+            			&lt;span&gt;Submit&lt;/span&gt;
+            		&lt;/a&gt;
+            	&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- .frame --&gt;
+</pre>
+<div class="spacer"></div>
+
+<form action="/php/subscribe.php" method="post" data-mailchimp="">
+	<div class="two_third">
+		<div class="input subscribe-wrap">
+			<input type="text" id="subscribe-email" name="subscribe-email" class="{required:true, email:true}" placeholder="Your Email" />
+			<div class="button secondary submit">
+        		<a href="#"><span>Subscribe</span></a>
+        	</div>
+		</div>
+	</div>
+	
+	<div class="two_third">
+   		<div class="form-respond"><strong>Sending ...</strong></div>
+   	</div>
+</form>	
+<div class="spacer"></div>
+
+<pre class="prettyprint lang-html linenums">
+&lt;form action="/php/subscribe.php" method="post" data-mailchimp=""&gt;
+	&lt;div class="two_third"&gt;
+		&lt;div class="input subscribe-wrap"&gt;
+			&lt;input type="text" id="subscribe-email" name="subscribe-email" class="{required:true, email:true}" placeholder="Your Email" /&gt;
+			&lt;div class="button secondary submit"&gt;
+        		&lt;a href="#"&gt;&lt;span&gt;Subscribe&lt;/span&gt;&lt;/a&gt;
+        	&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;div class="two_third"&gt;
+   		&lt;div class="form-respond"&gt;&lt;strong&gt;Sending ...&lt;/strong&gt;&lt;/div&gt;
+   	&lt;/div&gt;
+&lt;/form&gt;	
+</pre>
+<div class="spacer"></div>
+
+
+
+
+</div></section>
+
+
+	</section><!-- #content -->
+
+
+	<footer>
+		<div class="container">
+
+			<div id="footer-left">
+				Copyright © 2013 <a href="#">Polar HTML</a>. All Rights Reserved
+			</div>
+
+			<div id="footer-right">
+				<a href="#" id="back-to-top">Back to Top <i class="icon-chevron-sign-up"></i></a>
+			</div>
+
+		</div>
+	</footer>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.masonry.min.js"></script>
+<script src="js/jquery.tweet.min.js"></script>
+<script src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="js/jquery.imagesloaded.min.js"></script>
+
+<!-- GMap -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/gmaps.js"></script>
+
+<!-- Form -->
+<script src="js/jquery.metadata.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.form.js"></script>
+
+<!-- Prettify -->
+<script src="js/prettify/prettify.js"></script>
+<script src="js/prettify/lang-css.js"></script>
+
+<!-- Cutomize Panel -->
+<script src="js/mColorPicker.js"></script>
+
+<!-- Scroll To -->
+<script src="js/jquery.scrollTo.min.js"></script>
+
+<!-- Cutom Template JS -->
+<script src="js/template.js?v=20"></script>
+
+</body>
+</html>
